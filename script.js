@@ -1,4 +1,4 @@
-import{sk}from "./resources/skills.js";
+import{sk, sky}from "./resources/skills.js";
 
 
 
@@ -135,7 +135,14 @@ $(document).ready(function ()
 if(screen.width >=501 && screen.width <=690)
 {
   document.getElementById("skills-content").innerHTML="";
-  document.getElementById("skills-content").innerHTML=sk();
+  document.getElementById("skills-content").innerHTML=(sk());
+  // console.log(sk());
+}
+if(screen.width>=691 && screen.width<=947)
+{
+  document.getElementById("skills-content").innerHTML="";
+  document.getElementById("skills-content").innerHTML=(sky());
+  // console.log(sky());
 }
 
 //For getting the calendar data

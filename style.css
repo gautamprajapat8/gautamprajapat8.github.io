@@ -188,7 +188,7 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: url("resources/stack.jpg") no-repeat center;
+  background: url("resources/mac.jpg") no-repeat center;
   background-color: #111;
   height: 100vh;
   color: #fff;
@@ -711,6 +711,20 @@ footer {
 }
 
 @media (max-width: 947px) {
+
+
+
+  .home {
+    display: flex;
+    background: url("resources/stack.jpg") no-repeat center;
+    background-color: #111;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Ubuntu", sans-serif;
+  }
   .menu-btn {
     display: block;
     z-index: 999;
@@ -777,38 +791,72 @@ footer {
     flex: 100%;
   }
 
-  .skills .skills-content .column,
+  /* .skills .skills-content .column,
   .contact .contact-content .column {
     width: 100%;
     margin-bottom: 10px;
-  }
+  } */
   .skills-images
   {
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-      rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-      
-      border-radius: 5%;
-      width:150px;
-      height: 150px;
-      margin: auto;
-      display: grid;
-      justify-content: center;
-      align-items: center;
-  }
-  .skills .skills-content .column {
-    width: calc(50% - 20px);
-    /* border: 2px solid black; */
-    height: 90vh;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    border-radius: 5%;
+    width:145px;
+    height: 170px;
+    padding-top: 10px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    transition: transform .2s;
+  }
+  .skills-images img {
+    height: 110px;
+    width: 110px;
+  }
+  .skills .skills-content .skills-images .text {
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
   }
 
-  .skills-images img {
-    height: 80px;
-    width: 90px;
-    
-    /* transition: all 0.3s ease; */
+  .skills .skills-content .column
+  {
+    width: calc(100%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 180px; */
+    /* margin-bottom: -405px; */
   }
+
+  .proficiencies-content .column
+  {
+    width: calc(100%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+  .proficiencies-image img
+  {
+    width: 150px;
+    height: 170px;
+  }
+  .proficiencies-image
+{
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    display: grid;
+    border-radius: 2%;
+    width: 210px;
+    height: 250px;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    transition: transform .2s
+}
+
+
 }
 
 
@@ -817,6 +865,23 @@ footer {
 
 
 @media (max-width: 690px) {
+
+  .home {
+    display: flex;
+    background: url("resources/macbook.jpg") no-repeat center;
+    background-color: #111;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .home .home-content .text-3 span {
+    color: rgb(241, 53, 6);
+    font-weight: 500;
+    font-weight: bolder;
+  }
   .max-width {
     padding: 0 23px;
   }
@@ -832,18 +897,16 @@ footer {
   .home .home-content a {
     font-size: 20px;
   }
-
-  
   .skills
   {
-    height: 700px;
+    height: 880px;
+    /* border: 1px solid yellow; */
   }
 
  .skills-images
   {
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    /* display: grid; */
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    display: grid;
     border-radius: 5%;
     width:125px;
     height: 140px;
@@ -851,23 +914,42 @@ footer {
     margin: auto;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 30px; */
+    margin-bottom: 30px;
     transition: transform .2s;
+    /* border: 1px solid darkblue; */
   }
   .skills-images img {
     height: 95px;
     width: 95px;
-  }
-  .skills .skills-content .column {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    /* border: 1px solid green; */
   }
   .skills .skills-content .skills-images .text {
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 20px;
     text-align: center;
+  }
+
+  .skills .skills-content .column {
+    width: calc(100%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* border: 1px solid red; */
+  }
+  /* .skills .skills-content .column
+  {
+    width: calc(100%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(180px, 1fr); */
+    /* margin-bottom: -405px;
+    border: 1px solid red;
+  } */
+ 
+
+  .proficiencies-content
+  {
+    display: block;
+    /* grid-template-columns: repeat(1, 1fr); */
   }
 
 
@@ -897,6 +979,9 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
     
   }
   .scroll-up-btn {
@@ -915,6 +1000,22 @@ footer {
 
 
 @media (max-width: 500px) {
+
+  .home {
+    display: flex;
+    background: url("resources/mack.jpg") no-repeat center;
+    background-color: #111;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .home .home-content .text-3 span {
+    color: rgb(9, 216, 154);
+    font-weight: 900;
+  }
   .home .home-content .text-2 {
     font-size: 50px;
   }
@@ -970,6 +1071,12 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .skills .skills-content
+  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   .skills .skills-content .skills-images .text {
     font-size: 16px;
     font-weight: 600;
@@ -1010,10 +1117,7 @@ footer {
     gap: 15px;
     
   }
-  #hours
-  {
-    margin-left:55%;
-  }
+ 
   .scroll-up-btn {
     right: 15px;
     bottom: 15px;
@@ -1029,7 +1133,20 @@ footer {
 @media (max-width: 350px) 
 {
 
-    
+    .home{
+      background: url("resources/lapi.jpg") no-repeat center;
+      background-color: #111;
+      height: 100vh;
+      color: #fff;
+      min-height: 500px;
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: "Ubuntu", sans-serif;
+    }
+    .home .home-content .text-3 span {
+      color: rgb(113, 20, 220);
+      font-weight: 900;
+    }
   .skills
   {
     height: 900px;
@@ -1087,5 +1204,7 @@ footer {
   width: 100px;
   
 }
+
+
 
 }
