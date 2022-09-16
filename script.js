@@ -1,3 +1,7 @@
+import{sk}from "./resources/skills.js";
+
+
+
 $(document).ready(function ()
 {
   $(window).scroll(function ()
@@ -58,30 +62,81 @@ $(document).ready(function ()
   });
 
   // owl carousel script
-  $(".carousel").owlCarousel({
-    margin: 20,
-    loop: true,
-    autoplay: true,
-    autoplayTimeOut: 2000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: false,
+
+  if(screen.width<=500)
+  {
+    $(".carousel").owlCarousel({
+      margin: 10,
+      loop: true,
+      autoplay: true,
+      autoplayTimeOut: 2000,
+      autoplayHoverPause: true,
+      responsive: 
+      {
+        0: {
+          items: 1,
+          nav: false,
+        },
+        
       },
-      600: {
-        items: 2,
-        nav: false,
+    });
+  }
+  else if(screen.width >501 && screen.width<=900){
+
+    $(".carousel").owlCarousel({
+      margin: 15,
+      loop: true,
+      autoplay: true,
+      autoplayTimeOut: 2000,
+      autoplayHoverPause: true,
+      responsive: 
+      {
+        0: {
+          items: 1,
+          nav: false,
+        },
+        600: {
+          items: 2,
+          nav: false,
+        },
+        
       },
-      1000: {
-        items: 3,
-        nav: false,
+    });
+
+  }
+  else{
+    $(".carousel").owlCarousel({
+      margin: 20,
+      loop: true,
+      autoplay: true,
+      autoplayTimeOut: 2000,
+      autoplayHoverPause: true,
+      responsive: 
+      {
+        0: {
+          items: 1,
+          nav: false,
+        },
+        600: {
+          items: 2,
+          nav: false,
+        },
+        1000: {
+          items: 3,
+          nav: false,
+        },
       },
-    },
-  });
+    });
+  }
+
+
 });
 
-
+if(screen.width >=501 && screen.width <=690)
+{
+  document.getElementById("skills-content").innerHTML="";
+  document.getElementById("skills-content").innerHTML=sk();
+}
 
 //For getting the calendar data
 new GitHubCalendar(".calendar", "gautamprajapat8", { responsive: true });

@@ -422,7 +422,6 @@ section .title::after {
     height: 550px;
     transition: all 0.3s ease;
     align-items: flex-start;
-    padding: 5px;
     background-color: #fff;
     border-radius: 2px;
     margin-bottom: 25px;
@@ -499,6 +498,8 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
+
+
 /* Statistics section start */
 
 
@@ -555,22 +556,6 @@ section .title::after {
   margin: 30px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -716,13 +701,8 @@ footer {
 
 
 
+
 /* responsive media query start */
-@media (max-width: 1104px) {
-  .about .about-content .left img {
-    height: 300px;
-    width: 3o0px;
-  }
-}
 
 @media (max-width: 991px) {
   .max-width {
@@ -831,6 +811,11 @@ footer {
   }
 }
 
+
+
+
+
+
 @media (max-width: 690px) {
   .max-width {
     padding: 0 23px;
@@ -848,52 +833,84 @@ footer {
     font-size: 20px;
   }
 
-  .skills-images
+  
+  .skills
+  {
+    height: 700px;
+  }
+
+ .skills-images
+  {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    /* display: grid; */
+    border-radius: 5%;
+    width:125px;
+    height: 140px;
+    padding-top: 10px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 30px; */
+    transition: transform .2s;
+  }
+  .skills-images img {
+    height: 95px;
+    width: 95px;
+  }
+  .skills .skills-content .column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .skills .skills-content .skills-images .text {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+
+  .proficiencies-content .column
+  {
+    width: calc(100%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .proficiencies-image
   {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
       rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-      
-      border-radius: 5%;
-      width:100px;
-      height: 100px;
-      margin: auto;
       display: grid;
-      justify-content: center;
+      border-radius: 2%;
+      width: 230px;
+      height: 290px;
+      margin: auto;
       align-items: center;
+      justify-items: center;
+      padding: 10px;
+      transition: transform .2s
   }
-
-  .skills .skills-content .column {
-    width: calc(50% );
-    /* border: 2px solid black; */
-    height: 60vh;
-    display: grid;
-    gap: 0px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .skills-images img {
-    height: 60px;
-    width: 70px;
-    /* transition: all 0.3s ease; */
-  }
-  .skills
+  .git
   {
-    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    
   }
-  .skills .skills-content .left .text {
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .skills .skills-content .right .text {
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    text-align: center;
+  .scroll-up-btn {
+    right: 10px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
   }
 }
+
+
+
 
 
 
@@ -924,38 +941,79 @@ footer {
     width: 150px;
   }
 
-  .skills-images img {
-    height: 50px;
-    width: 70px;
-    /* transition: all 0.3s ease; */
-  }
+
   .skills
   {
-    height: 620px;
+    height: 1100px;
+  }
+
+ .skills-images
+  {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    /* display: grid; */
+    border-radius: 5%;
+    width:140px;
+    height: 150px;
+    padding-top: 10px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    transition: transform .2s;
+  }
+  .skills-images img {
+    height: 80px;
+    width: 80px;
   }
   .skills .skills-content .column {
-    width: calc(50% - 10px);
-    /* border: 2px solid black; */
-    height: 90vh;
     display: grid;
-    gap: 0px;
     grid-template-columns: repeat(1, 1fr);
   }
-  
-.skills .skills-content .left .text {
-  font-size: 12px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  text-align: center;
-}
+  .skills .skills-content .skills-images .text {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 
-.skills .skills-content .right .text {
-  font-size: 12px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  text-align: center;
-}
+  .proficiencies-content .column
+  {
+    width: calc(100%);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+  }
 
+
+  .project .carousel .card 
+  {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+      display: block;
+      border-radius: 10px;
+      margin: auto;
+      height: 550px;
+      transition: all 0.3s ease;
+      align-items: flex-start;
+      padding: 5px;
+      background-color: #fff;
+      border-radius: 2px;
+      margin-bottom: 25px;
+      padding: 5%;
+      border-radius: 2%;
+  }
+
+  .git
+  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    
+  }
+  #hours
+  {
+    margin-left:55%;
+  }
   .scroll-up-btn {
     right: 15px;
     bottom: 15px;
@@ -964,4 +1022,70 @@ footer {
     font-size: 23px;
     line-height: 38px;
   }
+}
+
+
+
+@media (max-width: 350px) 
+{
+
+    
+  .skills
+  {
+    height: 900px;
+  }
+
+  .skills-images
+  {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    /* display: grid; */
+    border-radius: 5%;
+    width:90px;
+    height: 110px;
+    /* padding-top: 10px; */
+    /* margin: auto;
+    justify-content: center;
+    align-items: center; */
+    /* margin-bottom: 30px; */
+    transition: transform .2s;
+  }
+  .skills-images img {
+    height: 50px;
+    width: 50px;
+  }
+  .skills .skills-content .column {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skills .title::after {
+    margin: -2px;
+    content: "what i know";
+  }
+
+  .proficiencies .title::after {
+    margin: -2px;
+    content: "what i know";
+  }
+  .project .title::after {
+    margin:-4px;
+    content: "see my work";
+  }
+  .contact .title::after {
+    margin:-4px;
+    content: "get in touch";
+  }
+#statistics
+{
+  margin-left: -25px;
+}
+
+.individualStat > div:nth-child(1) {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  height: 100px;
+  width: 100px;
+  
+}
+
 }
