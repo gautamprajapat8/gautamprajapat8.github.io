@@ -300,143 +300,205 @@ section .title::after {
 
 
 /* skills section styling */
+
 .skills
 {
   box-shadow: rgba(56, 54, 54, 0.2) 0px 0px 8px 0px;
-}
-.skills-images
-{
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    
-    border-radius: 5%;
-    width:200px;
-    height: 200px;
-    margin: auto;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-.skills-images img {
-  height: 120px;
-  width: 130px;
-  
-  /* transition: all 0.3s ease; */
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .skills .title::after {
   content: "what i know";
 }
 
-/* skills right column */
-.skills .skills-content .column {
-  width: calc(50% - 10px);
-  /* border: 2px solid black; */
-  height: 80vh;
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(2, 1fr);
+.skills-images
+{
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    display: grid;
+    border-radius: 5%;
+    width:190px;
+    height: 180px;
+    padding-top: 10px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    transition: transform .2s
 }
 
-.skills .skills-content .left .text {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-/* .skills .skills-content .left p {
-  text-align: justify;
-} */
-
-/* .skills .skills-content .left a {
-  display: inline-block;
-  background: rgb(33, 20, 220);
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 16px;
-  margin-top: 20px;
-  border-radius: 6px;
-  border: 2px solid rgb(33, 20, 220);
+.skills-images:hover
+{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: color 0.3s ease;
+  transform: scale(1.05);
   transition: all 0.3s ease;
-} */
-
-/* .skills .skills-content .left a:hover {
-  color: rgb(33, 20, 220);
-  background: none;
-} */
-
-.skills .skills-content .right .bars {
-  margin-bottom: 15px;
+  cursor: pointer;
 }
 
-.skills .skills-content .right .info {
-  display: flex;
-  margin-bottom: 5px;
-  align-items: center;
-  justify-content: space-between;
+.skills-images img {
+  height: 120px;
+  width: 130px;
+}
+.skills .skills-content .column {
+  width: calc(100%);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
-.skills .skills-content .right span {
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.skills .skills-content .right .line {
-  height: 5px;
-  width: 100%;
-  background: lightgrey;
-  position: relative;
-}
-
-.skills .skills-content .right .line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: rgb(33, 20, 220);
-}
-.skills .skills-content .right .text {
+.skills .skills-content .skills-images .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
   text-align: center;
 }
 
-.skills-content .right .html::before {
-  width: 90%;
+
+
+/* Proficiencies section start */
+
+.proficiencies .title::after {
+  content: "what i know";
 }
 
-.skills-content .right .css::before {
-  width: 60%;
+.proficiencies-content .column
+{
+  width: calc(100%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.skills-content .right .js::before {
-  width: 80%;
+.proficiencies-image
+{
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    display: grid;
+    border-radius: 2%;
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    transition: transform .2s
 }
 
-.skills-content .right .php::before {
-  width: 50%;
+.proficiencies-image img
+{
+  width: 180px;
+  height: 200px;
+}
+.proficiencies-image:hover
+{
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: color 0.3s ease;
+  transform: scale(1.07);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.skills-content .right .mysql::before {
-  width: 70%;
+
+.proficiencies-image .text {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
 }
+
 
 /* project section styling */
+
+.project
+{
+  box-shadow: rgba(56, 54, 54, 0.2) 0px 0px 8px 0px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
 .project .title::after {
   content: "see my work";
 }
 
-.project .carousel .card {
-  background: #222;
-  border-radius: 6px;
-  padding: 25px 35px;
-  text-align: center;
-  overflow: hidden;
+.project .column
+{
+  width: calc(100%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4%;
+}
+
+.project-content 
+{
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    display: grid;
+    border-radius: 0%;
+    margin: auto;
+    height: 550px;
+    align-items: center;
+    justify-items: center;
+    padding: 5px;
+    transition: transform .2s;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-bottom: 25px;
+  }
+
+.project-content  img
+{
+  width: 99%;
+}
+.project-ditels
+{
+  padding: 0% 2% 2% 2%;
+}
+.btn
+{
+   margin:20px;
+   display: flex;
+   justify-content: space-between;
+}
+.btn a
+{
+  height: 35px;
+  width: 100px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border: 1px solid rgb(0, 184, 55);
+  border-radius: 4px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform .2s;
+  color: #111;
+  font-weight: bold;
+  
+}
+.btn a:hover
+{
+  background: rgb(0, 184, 55);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: color 0.3s ease;
+  transform: scale(1.07);
   transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+.project-content:hover
+{
+  transition: color 0.3s ease;
+  transform: scale(1.07);
+  transition: all 0.3s ease;
+
+}
+
+
+
+
+/* Statistics section start */
+
+
+.statistics .title::after {
+  content: " what i know";
 }
 
 
@@ -567,7 +629,7 @@ footer {
   background: #111;
   padding: 15px 23px;
   color: #fff;
-  text-align: center;
+  text-align: righ;
 }
 
 footer span a {
@@ -578,6 +640,7 @@ footer span a {
 footer span a:hover {
   text-decoration: underline;
 }
+
 
 /* responsive media query start */
 @media (max-width: 1104px) {
