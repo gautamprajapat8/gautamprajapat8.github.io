@@ -406,48 +406,36 @@ section .title::after {
 }
 
 
+
 /* project section styling */
 
-.project
-{
-  box-shadow: rgba(56, 54, 54, 0.2) 0px 0px 8px 0px;
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-}
+
 .project .title::after {
   content: "see my work";
 }
-
-.project .column
-{
-  width: calc(100%);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 4%;
-}
-
-.project-content 
+.project .carousel .card 
 {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     display: grid;
-    border-radius: 0%;
+    border-radius: 10px;
     margin: auto;
     height: 550px;
-    align-items: center;
-    justify-items: center;
+    transition: all 0.3s ease;
+    align-items: flex-start;
     padding: 5px;
-    transition: transform .2s;
     background-color: #fff;
     border-radius: 2px;
     margin-bottom: 25px;
-  }
-
-.project-content  img
-{
-  width: 99%;
+    padding: 5%;
+    border-radius: 2%;
 }
-.project-ditels
+.project-title
 {
-  padding: 0% 2% 2% 2%;
+  margin-top: 10px;
+}
+.project .carousel .card:hover {
+  cursor: pointer;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 .btn
 {
@@ -466,7 +454,7 @@ section .title::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform .2s;
+  transition: transform .4s;
   color: #111;
   font-weight: bold;
   
@@ -476,33 +464,122 @@ section .title::after {
   background: rgb(0, 184, 55);
   color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transition: color 0.3s ease;
+  transition: color 0.5s ease;
   transform: scale(1.07);
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 
-.project-content:hover
-{
-  transition: color 0.3s ease;
-  transform: scale(1.07);
-  transition: all 0.3s ease;
 
+.project
+{
+  box-shadow: rgba(56, 54, 54, 0.2) 0px 0px 8px 0px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
-
-
+.project .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.project .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+.project .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+.project .carousel .card img {
+  width: 100%;
+  border: 2px solid rgb(19, 137, 192);
+  transition: all 0.3s ease;
+}
 
 /* Statistics section start */
 
 
 .statistics .title::after {
-  content: " what i know";
+  content: " what i done";
+}
+.git
+{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-between;
+}
+
+.statisticsTitle > h1 {
+  font-weight: 700;
+  margin-top: 100px;
+  position: relative;
+  width: fit-content;
+}
+
+.statisticsTitle > h1::after {
+  background-color: #506aff;
+  content: " ";
+  height: 20%;
+  position: absolute;
+  left: -5px;
+  top: 55%;
+  width: calc(100% + 10px);
+  z-index: -1;
+}
+
+.individualStat {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 140px;
+  text-align: center;
+}
+
+.individualStat > div:nth-child(1) {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: auto;
+  font-size: 23px;
+  font-weight: 600;
+  height: 130px;
+  width: 130px;
+  border: 10px solid #506aff;
+  border-radius: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#githubCommits
+{
+  margin: 30px;
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* contact section styling */
+.contact
+{
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  box-shadow: rgba(56, 54, 54, 0.2) 0px 0px 8px 0px;
+}
 .contact .title::after {
   content: "get in touch";
 }
@@ -627,19 +704,16 @@ section .title::after {
 /* footer section styling */
 footer {
   background: #111;
-  padding: 15px 23px;
+  padding: 10px 15px;
   color: #fff;
-  text-align: righ;
+  
+}
+#footer
+{
+  text-align: right;
 }
 
-footer span a {
-  color: rgb(33, 20, 220);
-  text-decoration: none;
-}
 
-footer span a:hover {
-  text-decoration: underline;
-}
 
 
 /* responsive media query start */

@@ -80,3 +80,8 @@ $(document).ready(function ()
     },
   });
 });
+
+
+
+//For getting the calendar data
+new GitHubCalendar(".calendar", "gautamprajapat8", { responsive: true });
