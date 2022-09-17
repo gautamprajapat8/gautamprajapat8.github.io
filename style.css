@@ -245,6 +245,10 @@ section .title::after {
 }
 
 /* about section styling */
+.about
+{
+  padding-top: 70px;
+}
 .about .title::after {
   content: "who i am";
 }
@@ -306,6 +310,7 @@ section .title::after {
 {
   box-shadow: rgba(56, 54, 54, 0.2) 0px 0px 8px 0px;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  padding-top: 70px;
 }
 
 .skills .title::after {
@@ -357,7 +362,10 @@ section .title::after {
 
 
 /* Proficiencies section start */
-
+.proficiencies
+{
+  padding-top: 70px;
+}
 .proficiencies .title::after {
   content: "what i know";
 }
@@ -411,7 +419,9 @@ section .title::after {
 
 /* project section styling */
 
-
+.project{
+  padding-top: 70px;
+}
 .project .title::after {
   content: "see my work";
 }
@@ -504,7 +514,10 @@ section .title::after {
 
 /* Statistics section start */
 
-
+.statistics
+{
+  padding-top: 70px;
+}
 .statistics .title::after {
   content: " what i done";
 }
@@ -851,8 +864,10 @@ footer {
     width: 100%;
     left: -100%;
     top: 0;
-    background: #111;
+    background: rgb(0, 0, 0);
     text-align: center;
+    font-weight: bolder;
+    /* padding-left: 30px; */
     padding-top: 80px;
     transition: all 0.3s ease;
   }
@@ -986,7 +1001,7 @@ footer {
 
 
 
-@media (max-width: 690px) {
+@media (max-width: 720px) {
 
   .home {
     display: flex;
@@ -1021,7 +1036,7 @@ footer {
   }
   .skills
   {
-    height: 880px;
+    height: 920px;
     /* border: 1px solid yellow; */
   }
 
@@ -1155,7 +1170,7 @@ footer {
 
   .skills
   {
-    height: 1100px;
+    height: 1250px;
   }
 
  .skills-images
@@ -1259,7 +1274,7 @@ footer {
   }
   .skills
   {
-    height: 900px;
+    height: 1050px;
   }
 
   .skills-images
