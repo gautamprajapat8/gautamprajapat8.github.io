@@ -15,6 +15,7 @@ let sk=()=>{
                 <p class="text">spring</p>
             </div>
         </div>
+        
         <div class="column">
 
             <div class="skills-images">
@@ -34,9 +35,10 @@ let sk=()=>{
             
 
         </div>
+
+
         <div class="column">
-
-
+        
             <div class="skills-images">
                 <img src="resources/javaScript.png" alt="">
                 <p class="text">javascript</p>
@@ -51,11 +53,9 @@ let sk=()=>{
                 <img src="resources/C.png" alt="">
                 <p class="text">C</p>
             </div>
-
-           
-            
-
         </div>
+
+
         <div class="column">
 
             <div class="skills-images">
@@ -114,6 +114,7 @@ return`
         </div>
 
     </div>
+
     <div class="column">
         <div class="skills-images">
             <img src="resources/C.png" alt="">

@@ -48,14 +48,14 @@ $(document).ready(function ()
 
   // typing text animation script
   var typed = new Typed(".typing", {
-    strings: ["Java Back-End Developer"],
+    strings: ["Java Back-End Developer","Front End Developer", "Full Stack Developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
   });
 
   var typed = new Typed(".typing-2", {
-    strings: ["Java Back-End Developer"],
+    strings: ["Java Back-End Developer", "Front End Developer", "Full Stack Developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -81,8 +81,8 @@ $(document).ready(function ()
       },
     });
   }
-  else if(screen.width >501 && screen.width<=900){
-
+  else if(screen.width >501 && screen.width<=900)
+  {
     $(".carousel").owlCarousel({
       margin: 15,
       loop: true,
@@ -102,9 +102,9 @@ $(document).ready(function ()
         
       },
     });
-
   }
-  else{
+  else
+  {
     $(".carousel").owlCarousel({
       margin: 20,
       loop: true,
@@ -147,3 +147,4 @@ if(screen.width>=691 && screen.width<=947)
 
 //For getting the calendar data
 GitHubCalendar(".calendar", "gautamprajapat8", { responsive: true });
+// GitHubCalendar(".calendar", "brajesh623", { responsive: true });
