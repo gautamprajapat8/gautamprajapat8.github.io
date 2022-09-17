@@ -146,4 +146,4 @@ if(screen.width>=691 && screen.width<=947)
 }
 
 //For getting the calendar data
-new GitHubCalendar(".calendar", "gautamprajapat8", { responsive: true });
+GitHubCalendar(".calendar", "gautamprajapat8", { responsive: true });

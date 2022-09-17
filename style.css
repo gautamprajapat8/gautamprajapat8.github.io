@@ -511,6 +511,7 @@ section .title::after {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-content: space-between;
+  justify-items: center;
 }
 
 .statisticsTitle > h1 {
@@ -791,11 +792,11 @@ footer {
     flex: 100%;
   }
 
-  /* .skills .skills-content .column,
+  .skills .skills-content .column,
   .contact .contact-content .column {
     width: 100%;
     margin-bottom: 10px;
-  } */
+  }
   .skills-images
   {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
@@ -1196,6 +1197,7 @@ footer {
 {
   margin-left: -25px;
 }
+
 
 .individualStat > div:nth-child(1) {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
