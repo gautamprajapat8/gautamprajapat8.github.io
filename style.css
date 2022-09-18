@@ -851,9 +851,6 @@ footer {
 }
 
 @media (max-width: 907px) {
-
-
-
   .home {
     display: flex;
     background: url("resources/stack.jpg") no-repeat center;
