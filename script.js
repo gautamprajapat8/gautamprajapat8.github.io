@@ -147,4 +147,20 @@ if(screen.width>=691 && screen.width<=947)
 
 //For getting the calendar data
 GitHubCalendar(".calendar", "gautamprajapat8", { responsive: true });
-// GitHubCalendar(".calendar", "brajesh623", { responsive: true });
+
+
+
+// total git commit Live data
+
+const sleep = (milliseconds) => {
+  return new Promise(resolve => setTimeout(resolve, milliseconds))
+}
+sleep(100).then(() => {
+  //do stuff
+  let x=document.querySelector(".contrib-number").innerText;
+  x=x.split(" ");
+
+  document.querySelector("#contrib-number").innerText="";
+  document.querySelector("#contrib-number").innerText=x[0];
+})
+
