@@ -1,8 +1,10 @@
 # gautamprajapat8.github.io
 ## Responsive Portfolio Website ✨
 
-Responsive Portfolio Website Using HTML, CSS and JavaScript, with a beautiful user interface. 
-Website contains: 
+It is Responsive my Portfolio, I built this Using HTML, CSS and JavaScript, with a beautiful user interface. 
+
+# Features
+
 - Header 
 - Home
 - About
