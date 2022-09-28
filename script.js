@@ -1,35 +1,28 @@
-import{sk, sky}from "./resources/skills.js";
+import { sk, sky } from "./resources/skills.js";
 
 
 
-$(document).ready(function ()
-{
-  $(window).scroll(function ()
-  {
+$(document).ready(function () {
+  $(window).scroll(function () {
     // sticky navbar on scroll script
-    if (this.scrollY > 20)
-    {
+    if (this.scrollY > 20) {
       $(".navbar").addClass("sticky");
     }
-    else
-    {
+    else {
       $(".navbar").removeClass("sticky");
     }
 
     // scroll-up button show/hide script
-    if (this.scrollY > 500)
-    {
+    if (this.scrollY > 500) {
       $(".scroll-up-btn").addClass("show");
     }
-    else
-    {
+    else {
       $(".scroll-up-btn").removeClass("show");
     }
   });
 
   // slide-up script
-  $(".scroll-up-btn").click(function ()
-  {
+  $(".scroll-up-btn").click(function () {
     $("html").animate({ scrollTop: 0 });
     // removing smooth scroll on slide-up button click
     $("html").css("scrollBehavior", "auto");
@@ -48,7 +41,7 @@ $(document).ready(function ()
 
   // typing text animation script
   var typed = new Typed(".typing", {
-    strings: ["Java Back-End Developer","Front End Web Developer", "Full Stack Web Developer"],
+    strings: ["Java Back-End Developer", "Front End Web Developer", "Full Stack Web Developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -63,33 +56,31 @@ $(document).ready(function ()
 
   // owl carousel script
 
-  if(screen.width<=500)
-  {
+  if (screen.width <= 500) {
     $(".carousel").owlCarousel({
       margin: 10,
       loop: true,
       autoplay: true,
       autoplayTimeOut: 2000,
       autoplayHoverPause: true,
-      responsive: 
+      responsive:
       {
         0: {
           items: 1,
           nav: false,
         },
-        
+
       },
     });
   }
-  else if(screen.width >501 && screen.width<=900)
-  {
+  else if (screen.width > 501 && screen.width <= 900) {
     $(".carousel").owlCarousel({
       margin: 15,
       loop: true,
       autoplay: true,
       autoplayTimeOut: 2000,
       autoplayHoverPause: true,
-      responsive: 
+      responsive:
       {
         0: {
           items: 1,
@@ -99,19 +90,18 @@ $(document).ready(function ()
           items: 2,
           nav: false,
         },
-        
+
       },
     });
   }
-  else
-  {
+  else {
     $(".carousel").owlCarousel({
       margin: 20,
       loop: true,
       autoplay: true,
       autoplayTimeOut: 2000,
       autoplayHoverPause: true,
-      responsive: 
+      responsive:
       {
         0: {
           items: 1,
@@ -132,16 +122,14 @@ $(document).ready(function ()
 
 });
 
-if(screen.width >=501 && screen.width <=690)
-{
-  document.getElementById("skills-content").innerHTML="";
-  document.getElementById("skills-content").innerHTML=(sk());
+if (screen.width >= 501 && screen.width <= 690) {
+  document.getElementById("skills-content").innerHTML = "";
+  document.getElementById("skills-content").innerHTML = (sk());
   // console.log(sk());
 }
-if(screen.width>=691 && screen.width<=947)
-{
-  document.getElementById("skills-content").innerHTML="";
-  document.getElementById("skills-content").innerHTML=(sky());
+if (screen.width >= 691 && screen.width <= 947) {
+  document.getElementById("skills-content").innerHTML = "";
+  document.getElementById("skills-content").innerHTML = (sky());
   // console.log(sky());
 }
 
@@ -156,20 +144,20 @@ const sleep = (milliseconds) => {
   return new Promise(resolve => setTimeout(resolve, milliseconds))
 }
 sleep(100).then(() => {
-  let x=document.querySelector(".contrib-number").innerText;
-  x=x.split(" ");
-  x=(+(x[0])--);
-  x=x-(x%10);
+  let x = document.querySelector(".contrib-number").innerText;
+  x = x.split(" ");
+  x = (+(x[0])--);
+  x = x - (x % 10);
 
 
-  document.querySelector("#contrib-number").innerText="";
-  document.querySelector("#contrib-number").innerText=x+"+";
+  document.querySelector("#contrib-number").innerText = "";
+  document.querySelector("#contrib-number").innerText = x + "+";
 })
 
 
 // fro project section
 
-var project=[
+var project = [
   {
     Imag: "lyst.jpg",
     ProjTitle: "lyst.com (clone)",
@@ -207,7 +195,7 @@ var project=[
     github: "https://github.com/gautamprajapat8/YouTube_clone"
   },
   {
-    Imag:"jobApp.jpg",
+    Imag: "jobApp.jpg",
     ProjTitle: "jobApp",
     ProjDiscription: "This is for the job apply web Application where we can perform many operations on job applied data. I have tried my best to make the website.",
     TeachStack: "HTML | CSS | JAVASCRIPT | ES6 | API",
@@ -230,57 +218,56 @@ var project=[
 
 
 
-project.forEach(function (data)
-{
+project.forEach(function (data) {
 
-  let card=document.createElement("div");
+  let card = document.createElement("div");
   card.setAttribute("class", "card");
 
-  let box=document.createElement("div");
+  let box = document.createElement("div");
   box.setAttribute("class", "box");
 
-  let img=document.createElement("img");
-  img.src="/resources/"+data.Imag;
-  img.alt=data.project_title;
+  let img = document.createElement("img");
+  img.src = "/resources/" + data.Imag;
+  img.alt = data.project_title;
 
-  let project_ditels=document.createElement("div");
+  let project_ditels = document.createElement("div");
   project_ditels.setAttribute("class", "project-ditels");
-  
-  let project_title=document.createElement("h3");
+
+  let project_title = document.createElement("h3");
   project_title.setAttribute("class", "project-title");
-  project_title.innerText=data.project_title;
+  project_title.innerText = data.project_title;
 
-  let p=document.createElement("p");
-  p.innerText=data.ProjDiscription;
+  let p = document.createElement("p");
+  p.innerText = data.ProjDiscription;
 
-  let h4=document.createElement("h4");
-  h4.innerText="Tech-Stack";
+  let h4 = document.createElement("h4");
+  h4.innerText = "Tech-Stack";
 
-  let h5=document.createElement("h5");
-  h5.innerText=data.TeachStack;
+  let h5 = document.createElement("h5");
+  h5.innerText = data.TeachStack;
 
 
-  let li=document.createElement("li");
-  li.innerText=data.WorkDiscription;
+  let li = document.createElement("li");
+  li.innerText = data.WorkDiscription;
 
-  let btn=document.createElement("div");
+  let btn = document.createElement("div");
   btn.setAttribute("class", "btn");
 
 
-  let live=document.createElement("a");
-  live.href=data.live;
-  live.target="_blank";
-  live.innerText="LIVE ↗️";
+  let live = document.createElement("a");
+  live.href = data.live;
+  live.target = "_blank";
+  live.innerText = "LIVE ↗️";
 
-  let github=document.createElement("a");
-  github.href=data.github;
-  github.target="_blank";
-  github.innerText=" GITHUB ↗️";
+  let github = document.createElement("a");
+  github.href = data.github;
+  github.target = "_blank";
+  github.innerText = " GITHUB ↗️";
 
-  btn.append(live,github);
-  project_ditels.append(project_title,p,h4,h5,li,btn);
+  btn.append(live, github);
+  project_ditels.append(project_title, p, h4, h5, li, btn);
 
-  box.append(img,project_ditels);
+  box.append(img, project_ditels);
 
   card.append(box);
 
