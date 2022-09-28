@@ -145,11 +145,17 @@ const sleep = (milliseconds) => {
 }
 sleep(100).then(() => {
   let x = document.querySelector(".contrib-number").innerText;
+  
+  if(x>0)
+  {
+    window.location.reload();
+  }
+  
   x = x.split(" ");
   x = (+(x[0])--);
   x = x - (x % 10);
 
-
+  
   document.querySelector("#contrib-number").innerText = "";
   document.querySelector("#contrib-number").innerText = x + "+";
 })
@@ -216,7 +222,7 @@ var project = [
 ];
 
 
-
+let x=false;
 
 project.forEach(function (data) {
 
@@ -274,5 +280,7 @@ project.forEach(function (data) {
   console.log(card);
 
   document.querySelector("#carousel").append(card);
-
 });
+
+
+
