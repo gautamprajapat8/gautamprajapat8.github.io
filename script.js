@@ -241,7 +241,7 @@ project.forEach(function (data) {
 
   let project_title = document.createElement("h3");
   project_title.setAttribute("class", "project-title");
-  project_title.innerText = data.project_title;
+  project_title.innerText = data.ProjTitle;
 
   let p = document.createElement("p");
   p.innerText = data.ProjDiscription;
