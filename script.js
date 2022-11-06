@@ -277,10 +277,14 @@ project.forEach(function (data) {
 
   card.append(box);
 
-  console.log(card);
+  // console.log(card);
 
   document.querySelector("#carousel").append(card);
 });
 
-
+// For open resume in another window
+// document.querySelector(".resumeOpen").addEventListener("click", open);
+// function open() {
+//   window.location.href="https://gautamprajapat8.github.io/resources/Gautam_Kumar_Resume.pdf";
+// };
 
