@@ -161,6 +161,10 @@ sleep(100).then(() => {
 })
 
 
+
+
+
+
 // fro project section
 
 var project = [
@@ -288,3 +292,4 @@ project.forEach(function (data) {
 //   window.location.href="https://gautamprajapat8.github.io/resources/Gautam_Kumar_Resume.pdf";
 // };
 
+// alert(window. innerWidth);
