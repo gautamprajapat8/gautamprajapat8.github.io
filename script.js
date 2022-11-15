@@ -169,6 +169,24 @@ sleep(100).then(() => {
 
 var project = [
   {
+    Imag: "Online_Trip_Management_System.jpg",
+    ProjTitle: "Online Trip Management System (Travel Junky)",
+    ProjDiscription: "This is Java_backend of online trip management System where the admin can manage all features, And the customer can also perform some task such as view routes, hotels, and etc.",
+    TeachStack: "Java | Hibernate | MySQL | Springboot ",
+    WorkDiscription: "It was collaborative project built by a team of 5 executed in 5 days and I was the Contributors in this.",
+    live: "https://drive.google.com/file/d/1o0eMBOdv14uMpjXMojD8_8PZEQr1XaEz/view?usp=sharing",
+    github: "https://github.com/prayagp8/kindhearted-afternoon-7542"
+  },
+  {
+    Imag: "Course_monitoring_system.jpg",
+    ProjTitle: "Course monitoring system",
+    ProjDiscription: "This is a (mini) project for Course monitoring system, where Course Monitoring System will keep the records of all the courses, batches, faculties, and the day-wise update for every batch. It will also help the Faculty Head to maintain the course plan.",
+    TeachStack: "Java | MySQL | JDBC ",
+    WorkDiscription: "It was my individual project executed in 5 days.",
+    live: "https://drive.google.com/file/d/1BtURKD-fof1Qc0eGCBrq4xYKPbNcGlou/view?usp=sharing",
+    github: "https://github.com/gautamprajapat8/Course-monitoring-system"
+  },
+  {
     Imag: "lyst.jpg",
     ProjTitle: "lyst.com (clone)",
     ProjDiscription: "lyst is an e-commerce website for buying various types of Faison related products. We have tried our best to clone of the website.",
@@ -186,42 +204,42 @@ var project = [
     live: "https://gautamprajapat8.github.io/quirky-eyes-4143/",
     github: "https://github.com/gautamprajapat8/quirky-eyes-4143"
   },
-  {
-    Imag: "studentManagementSystem.jpg",
-    ProjTitle: "student management system",
-    ProjDiscription: "The student management system is a web Application where we can perform many operations on Student data. I have tried my best to make the website.",
-    TeachStack: "HTML | CSS | JAVASCRIPT | ES6",
-    WorkDiscription: "It was individual project which is given by masai school built by me in 1 day.",
-    live: "https://gautamprajapat8.github.io/studentManagementSystem/",
-    github: "https://github.com/gautamprajapat8/studentManagementSystem"
-  },
-  {
-    Imag: "youtubeClone.jpg",
-    ProjTitle: "YouTube (clone)",
-    ProjDiscription: "This is YouTube clone web Application where we can watch videos. I have tried my best to make the website.",
-    TeachStack: "HTML | CSS | JAVASCRIPT | ES6 | API",
-    WorkDiscription: "It was individual project which is given by masai school built by me in 1 day.",
-    live: "https://gautamprajapat8.github.io/YouTube_clone/",
-    github: "https://github.com/gautamprajapat8/YouTube_clone"
-  },
-  {
-    Imag: "jobApp.jpg",
-    ProjTitle: "jobApp",
-    ProjDiscription: "This is for the job apply web Application where we can perform many operations on job applied data. I have tried my best to make the website.",
-    TeachStack: "HTML | CSS | JAVASCRIPT | ES6 | API",
-    WorkDiscription: "It was individual project which is given by masai school built by me in 1 day.",
-    live: "https://gautamprajapat8.github.io/jobApp/",
-    github: "https://github.com/gautamprajapat8/jobApp",
-  },
-  {
-    Imag: "liveClock.jpg",
-    ProjTitle: "Live Clock",
-    ProjDiscription: "This is live Clock web Application where we can see the live Time. I have tried my best to make the website.",
-    TeachStack: "HTML | CSS | JAVASCRIPT",
-    WorkDiscription: "It was my first project .",
-    live: "https://gautamprajapat8.github.io/clock/",
-    github: "https://github.com/gautamprajapat8/clock"
-  },
+  // {
+  //   Imag: "studentManagementSystem.jpg",
+  //   ProjTitle: "student management system",
+  //   ProjDiscription: "The student management system is a web Application where we can perform many operations on Student data. I have tried my best to make the website.",
+  //   TeachStack: "HTML | CSS | JAVASCRIPT | ES6",
+  //   WorkDiscription: "It was individual project which is given by masai school built by me in 1 day.",
+  //   live: "https://gautamprajapat8.github.io/studentManagementSystem/",
+  //   github: "https://github.com/gautamprajapat8/studentManagementSystem"
+  // },
+  // {
+  //   Imag: "youtubeClone.jpg",
+  //   ProjTitle: "YouTube (clone)",
+  //   ProjDiscription: "This is YouTube clone web Application where we can watch videos. I have tried my best to make the website.",
+  //   TeachStack: "HTML | CSS | JAVASCRIPT | ES6 | API",
+  //   WorkDiscription: "It was individual project which is given by masai school built by me in 1 day.",
+  //   live: "https://gautamprajapat8.github.io/YouTube_clone/",
+  //   github: "https://github.com/gautamprajapat8/YouTube_clone"
+  // },
+  // {
+  //   Imag: "jobApp.jpg",
+  //   ProjTitle: "jobApp",
+  //   ProjDiscription: "This is for the job apply web Application where we can perform many operations on job applied data. I have tried my best to make the website.",
+  //   TeachStack: "HTML | CSS | JAVASCRIPT | ES6 | API",
+  //   WorkDiscription: "It was individual project which is given by masai school built by me in 1 day.",
+  //   live: "https://gautamprajapat8.github.io/jobApp/",
+  //   github: "https://github.com/gautamprajapat8/jobApp",
+  // },
+  // {
+  //   Imag: "liveClock.jpg",
+  //   ProjTitle: "Live Clock",
+  //   ProjDiscription: "This is live Clock web Application where we can see the live Time. I have tried my best to make the website.",
+  //   TeachStack: "HTML | CSS | JAVASCRIPT",
+  //   WorkDiscription: "It was my first project .",
+  //   live: "https://gautamprajapat8.github.io/clock/",
+  //   github: "https://github.com/gautamprajapat8/clock"
+  // },
 
 ];
 
