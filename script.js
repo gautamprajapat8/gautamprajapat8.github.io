@@ -134,7 +134,7 @@ if (screen.width >= 691 && screen.width <= 947) {
 }
 
 //For getting the calendar data
-GitHubCalendar(".calendar", "gautamprajapat8", { responsive: true });
+GitHubCalendar(".calendar", "gautamprajapat8", { responsive: true ,tooltips: true});
 
 
 
@@ -311,3 +311,10 @@ project.forEach(function (data) {
 // };
 
 // alert(window. innerWidth);
+
+
+
+document.querySelector(".resumeDow").addEventListener("click", function()
+{
+  window.open("resources/Gautam_Kumar_Resume.pdf", "_blank");
+});
