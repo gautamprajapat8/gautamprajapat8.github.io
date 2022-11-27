@@ -314,7 +314,19 @@ project.forEach(function (data) {
 
 
 
-document.querySelector(".resumeDow").addEventListener("click", function()
+document.querySelector(".resumeDow1").addEventListener("click", function()
+{
+  window.open("resources/Gautam_Kumar_Resume.pdf", "_blank");
+});
+
+
+document.querySelector(".resumeDow2").addEventListener("click", function()
+{
+  window.open("resources/Gautam_Kumar_Resume.pdf", "_blank");
+});
+
+
+document.querySelector(".resumeDow3").addEventListener("click", function()
 {
   window.open("resources/Gautam_Kumar_Resume.pdf", "_blank");
 });
