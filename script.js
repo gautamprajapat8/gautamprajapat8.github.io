@@ -174,8 +174,9 @@ var project = [
     ProjDiscription: "This is Java_backend of online trip management System where the admin can manage all features, And the customer can also perform some task such as view routes, hotels, and etc.",
     TeachStack: "Java | Hibernate | MySQL | Springboot ",
     WorkDiscription: "It was collaborative project built by a team of 5 executed in 5 days and I was the Contributors in this.",
-    live: "https://drive.google.com/file/d/1o0eMBOdv14uMpjXMojD8_8PZEQr1XaEz/view?usp=sharing",
-    github: "https://github.com/prayagp8/kindhearted-afternoon-7542"
+    live: "https://drive.google.com/file/d/11yXgrT-ajtNEV3R9d5eTLKHqSkJYA-5e/view",
+    github: "https://github.com/prayagp8/kindhearted-afternoon-7542",
+    innerText: "LIVE ↗️"
   },
   {
     Imag: "Course_monitoring_system.jpg",
@@ -183,8 +184,9 @@ var project = [
     ProjDiscription: "This is a (mini) project for Course monitoring system, where Course Monitoring System will keep the records of all the courses, batches, faculties, and the day-wise update for every batch. It will also help the Faculty Head to maintain the course plan.",
     TeachStack: "Java | MySQL | JDBC ",
     WorkDiscription: "It was my individual project executed in 5 days.",
-    live: "https://drive.google.com/file/d/1BtURKD-fof1Qc0eGCBrq4xYKPbNcGlou/view?usp=sharing",
-    github: "https://github.com/gautamprajapat8/Course-monitoring-system"
+    live: "https://drive.google.com/file/d/1YR7uTko9jhaeodC7NwlMtPSszhLDYK4c/view",
+    github: "https://github.com/gautamprajapat8/Course-monitoring-system",
+    innerText: "LIVE ↗️"
   },
   {
     Imag: "lyst.jpg",
@@ -193,7 +195,8 @@ var project = [
     TeachStack: "HTML | CSS | JAVASCRIPT | ES6",
     WorkDiscription: "It was collaborative project built by a team of 6 executed in 5 days and I was the co-leader in this.",
     live: "https://glowing-panda-1c570f.netlify.app/",
-    github: "https://github.com/rhaegar7996/CW_Web19_lyst"
+    github: "https://github.com/rhaegar7996/CW_Web19_lyst",
+    innerText: "LIVE ↗️"
   },
   {
     Imag: "desktime.jpg",
@@ -201,8 +204,9 @@ var project = [
     ProjDiscription: "deskTime is The ultimate all-in-one automatic time tracker website and We have tried our best to clone the website.",
     TeachStack: "HTML | CSS | JAVASCRIPT | ES6",
     WorkDiscription: "It was collaborative project built by a team of 5 executed in 5 days and I was the group's team leader in this.",
-    live: "https://gautamprajapat8.github.io/quirky-eyes-4143/",
-    github: "https://github.com/gautamprajapat8/quirky-eyes-4143"
+    live: "https://gautamprajapat8.github.io/deskTime_Clone/",
+    github: "https://github.com/gautamprajapat8/deskTime_Clone",
+    innerText: "LIVE ↗️"
   },
   // {
   //   Imag: "studentManagementSystem.jpg",
@@ -285,7 +289,7 @@ project.forEach(function (data) {
   let live = document.createElement("a");
   live.href = data.live;
   live.target = "_blank";
-  live.innerText = "LIVE ↗️";
+  live.innerText = data.innerText;
 
   let github = document.createElement("a");
   github.href = data.github;
