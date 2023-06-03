@@ -334,3 +334,12 @@ document.querySelector(".resumeDow3").addEventListener("click", function()
 {
   window.open("resources/Gautam_Kumar_Resume.pdf", "_blank");
 });
+
+
+
+
+document.getElementById("send").addEventListener("click", function(){
+  alert("message sent");
+  // window.open("https://gautamprajapat8.github.io/");
+  Location.reload();
+});
