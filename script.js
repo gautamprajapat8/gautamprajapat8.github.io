@@ -340,6 +340,6 @@ document.querySelector(".resumeDow3").addEventListener("click", function()
 
 document.getElementById("send").addEventListener("click", function(){
   alert("message sent");
-  // window.open("https://gautamprajapat8.github.io/");
+  // window.location.replace("https://gautamprajapat8.github.io/");
   Location.reload();
 });
