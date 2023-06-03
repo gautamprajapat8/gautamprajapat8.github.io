@@ -22,7 +22,34 @@
     <!-- Github Calendar CSS -->
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 
-
+    <script>
+        function sendMessage(){
+            event.preventDefault();
+            const username=document.getElementById("username").value;
+            const mobileNo=document.getElementById("mobileNo").value;
+            const userMail=document.getElementById("userMail").value;
+            const subject=document.getElementById("subject").value;
+            const textMessage=document.getElementById("textMessage").value;
+            const data = {
+                mail:userMail,
+                subject:subject,
+                message:textMessage,
+                username:username,
+                mobileNo:mobileNo,
+            }
+            fetch("http://127.0.0.1:8000/sendmail", {
+                method:"POST",
+                headers:{
+                    "Content-Type": "application/json",
+                },
+                body:JSON.stringify(data)
+            })
+            .then((response)=>{
+                alert("Message sent.")
+                console.log(response)
+            })
+        }
+    </script>
 </head>
 
 
@@ -464,25 +491,25 @@
                         </div>
                     </form> -->
                     
-                    <form  action="https://formspree.io/f/mrgvjydl" method="POST" >
+                    <form  onsubmit="sendMessage();">
                         
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" placeholder="Name" id="username">
                             </div>
                             <div class="field">
-                                <input type="tel" pattern="[0-9]{10}" title="Ten digits mobile number" placeholder="Mobile number" required>
+                                <input id="mobileNo" type="tel" pattern="[0-9]{10}" title="Ten digits mobile number" placeholder="Mobile number" >
                             </div>
                             
                         </div>
                         <div class="field email">
-                            <input type="email" name="email" placeholder="Email" required>
+                            <input id="userMail" type="email" name="email" placeholder="Email" >
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input id="subject" type="text" placeholder="Subject" >
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" name="message" placeholder="Message.." required></textarea>
+                            <textarea id="textMessage" cols="30" rows="10" name="message" placeholder="Message.." ></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send message</button>
@@ -503,6 +530,7 @@
 
 </body>
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js" ;></script>
+
 <script src="script.js" type="module"></script>
 
 </html>
