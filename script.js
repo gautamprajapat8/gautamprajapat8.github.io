@@ -21,6 +21,7 @@ $(document).ready(function () {
     }
   });
 
+
   // slide-up script
   $(".scroll-up-btn").click(function () {
     $("html").animate({ scrollTop: 0 });
@@ -133,6 +134,8 @@ if (screen.width >= 691 && screen.width <= 947) {
   // console.log(sky());
 }
 
+
+
 //For getting the calendar data
 GitHubCalendar(".calendar", "gautamprajapat8", { responsive: true ,tooltips: true});
 
@@ -157,6 +160,7 @@ sleep(100).then(() => {
 
   
   document.querySelector("#contrib-number").innerText = "";
+
   document.querySelector("#contrib-number").innerText = x + "+";
 })
 
@@ -165,8 +169,7 @@ sleep(100).then(() => {
 
 
 
-// fro project section
-
+// for project section
 var project = [
   {
     Imag: "Online_Trip_Management_System.jpg",

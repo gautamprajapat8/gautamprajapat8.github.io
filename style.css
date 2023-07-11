@@ -1,14 +1,14 @@
 /*  import google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
 
-html {
+html{
   scroll-behavior: smooth;
 }
 
@@ -28,6 +28,7 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
 
 /* all similar content styling codes */
 section {
@@ -88,6 +89,7 @@ section .title::after {
   background: #fff;
   transform: translateX(-50%);
 }
+
 
 /* navbar styling */
 .navbar {
