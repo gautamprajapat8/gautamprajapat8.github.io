@@ -39,7 +39,7 @@ section {
 
 .max-width {
   max-width: 1300px;
-  padding: 0 80px;
+  padding: 0 20px;
   margin: auto;
 }
 
@@ -94,8 +94,7 @@ section .title::after {
 
 
 /* navbar styling */
-.navbar 
-{
+.navbar-navbar {
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -104,55 +103,57 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.navbar.sticky {
+.navbar-navbar.sticky {
   padding: 15px 0;
   background: rgb(33, 20, 220);
 }
 
-.navbar .max-width {
+.navbar-navbar .max-width {
   display: flex;
   align-items: center;
   justify-content:space-between;
 }
 
-.navbar .logo a {
+.navbar-navbar .logo a {
   color: #fff;
   font-size: 35px;
   font-weight: 600;
+  text-decoration: none;
 }
 
-.navbar .logo a span {
+.navbar-navbar .logo a span {
   color: rgb(33, 20, 220);
   transition: all 0.3s ease;
 }
 
-.navbar.sticky .logo a span {
+.navbar-navbar.sticky .logo a span {
   color: #fff;
 }
 
-.navbar .menu{
+.navbar-navbar .menu{
   margin-right: -30px;
 }
 
-.navbar .menu li {
+.navbar-navbar .menu li {
   list-style: none;
   display: inline-block;
 }
 
-.navbar .menu li a {
+.navbar-navbar .menu li a {
   display: block;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
-.navbar .menu li a:hover {
+.navbar-navbar .menu li a:hover {
   color: rgb(33, 20, 220);
 }
 
-.navbar.sticky .menu li a:hover {
+.navbar-navbar.sticky .menu li a:hover {
   color: #fff;
 }
 
@@ -236,6 +237,15 @@ section .title::after {
   color: rgb(33, 20, 220);
   font-weight: 500;
 }
+
+.footer-name {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  margin-left: -1px;
+  padding: 0;
+}
+
 
 .home .home-content a:last-child {
   display: inline-block;
@@ -334,7 +344,7 @@ section .title::after {
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     display: grid;
     border-radius: 5%;
-    width:190px;
+    width:220px;
     height: 180px;
     padding-top: 10px;
     margin: auto;
@@ -396,7 +406,7 @@ section .title::after {
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     display: grid;
     border-radius: 2%;
-    width: 240px;
+    width: 287px;
     height: 300px;
     margin: auto;
     align-items: center;
@@ -466,10 +476,10 @@ section .title::after {
    display: flex;
    justify-content: space-between;
 }
-.btn a
+.btn.projectCard a
 {
   height: 35px;
-  width: 100px;
+  width: 180px;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   border: 1px solid rgb(0, 184, 55);
   border-radius: 4px;
@@ -584,6 +594,43 @@ section .title::after {
   margin: 30px;
 
 }
+/* .ContributionCalendar-day[data-level='0']{
+  border: 2px solid white;
+}
+.ContributionCalendar-day[data-level='1']{
+  border: 2px solid white;
+} */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.p-3 {
+  padding: 1rem;
+}
+.project-card .btn{
+  margin: 0;
+  gap: 10px;
+}
+.project-card li{
+  font-size: 14px;
+  min-height: 50px;
+}
 
 #github-readme-stats
 {
@@ -634,13 +681,13 @@ section .title::after {
 
 .contact .contact-content .row {
   display: flex;
-  height: 65px;
+  height: 45px;
   align-items: center;
 }
 
-.contact .contact-content .row .info {
+/* .contact .contact-content .row .info {
   margin-left: 30px;
-}
+} */
 
 .contact .contact-content .row i {
   font-size: 25px;
@@ -660,6 +707,7 @@ section .title::after {
 
 .contact .contact-content .info .sub-title {
   color: #333;
+  padding-left: 10px;
 }
 
 .contact .right form .fields {
@@ -792,10 +840,10 @@ footer {
   .max-width {
     padding: 0 50px;
   }
-  .navbar .logo a {
+  .navbar-navbar .logo a {
     margin-left: -10px;
   }
-  .navbar .menu li a {
+  .navbar-navbar .menu li a {
     font-size: 17px;
   }
 
@@ -874,13 +922,13 @@ footer {
 
 @media (max-width: 1090px) {
 
-  .navbar .logo a {
+  .navbar-navbar .logo a {
     color: #fff;
     font-size: 32px;
     margin-left: -20px;
     font-weight: 600;
   }
-  .navbar .menu li a {
+  .navbar-navbar .menu li a {
     font-size: 17px;
   margin-left: 25px;
 
@@ -904,12 +952,12 @@ footer {
 
 @media (max-width: 1040px) {
 
-  .navbar .logo a {
+  .navbar-navbar .logo a {
     color: #fff;
     font-size: 30px;
     margin-left: -20px;
   }
-  .navbar .menu li a {
+  .navbar-navbar .menu li a {
     font-size: 16px;
     margin-left: 15px;
 
@@ -934,13 +982,17 @@ footer {
 
 
 @media (max-width: 923px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(289px, 1fr));
+}
 
-  .navbar .logo a {
+  .navbar-navbar .logo a {
     color: #fff;
     font-size: 29px;
     font-weight: 600;
   }
-  .navbar .menu li a {
+  .navbar-navbar .menu li a {
     font-size: 16px;
     margin-left: 13px;
 
@@ -1023,7 +1075,7 @@ footer {
   .menu-btn i.active:before {
     content: "\f00d";
   }
-  .navbar .menu {
+  .navbar-navbar .menu {
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -1037,18 +1089,18 @@ footer {
     transition: all 0.3s ease;
   }
 
-  .navbar .logo a {
+  .navbar-navbar .logo a {
     margin-left: 15px;
   }
-  .navbar .menu.active {
+  .navbar-navbar .menu.active {
     left: 0;
   }
 
-  .navbar .menu li {
+  .navbar-navbar .menu li {
     display: block;
   }
 
-  .navbar .menu li a {
+  .navbar-navbar .menu li a {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
@@ -1214,7 +1266,6 @@ footer {
     font-family: "Ubuntu", sans-serif;
   }
   .home .home-content .text-3 span {
-    color: rgb(241, 53, 6);
     font-weight: 500;
     font-weight: bolder;
   }
@@ -1334,11 +1385,19 @@ footer {
 
 
 
-
+.skills-images {
+  text-align: center;
+  margin-bottom: 26px;
+}
 
 
 @media (max-width: 500px) {
-
+  section .title{
+    margin-bottom: 20px;
+  }
+  .max-width {
+    padding: 0 15px;
+}
   .home {
     display: flex;
     background: url("resources/mack.jpg") no-repeat center;
@@ -1351,7 +1410,6 @@ footer {
     font-family: "Ubuntu", sans-serif;
   }
   .home .home-content .text-3 span {
-    color: rgb(9, 216, 154);
     font-weight: 900;
   }
   .home .home-content .text-2 {
@@ -1383,16 +1441,18 @@ footer {
 
   .skills
   {
-    height: 1250px;
+    height: auto;
   }
-
+  .skills .skills-content .column{
+    gap: 20px;
+  }
  .skills-images
   {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     /* display: grid; */
     border-radius: 5%;
-    width:140px;
+    width:153px;
     height: 150px;
     padding-top: 10px;
     margin: auto;
@@ -1401,13 +1461,16 @@ footer {
     margin-bottom: 30px;
     transition: transform .2s;
   }
+  .skills-images {
+    margin-bottom: 1px;
+}
   .skills-images img {
     height: 80px;
     width: 80px;
   }
   .skills .skills-content .column {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .skills .skills-content
@@ -1511,7 +1574,6 @@ footer {
     font-family: "Ubuntu", sans-serif;
   }
   .home .home-content .text-3 span {
-    color: rgb(113, 20, 220);
     font-weight: 900;
   }
   .skills
@@ -1621,4 +1683,119 @@ footer {
   }
 
 
+}
+
+
+/* Ensure the card images are responsive and don't stretch */
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the cards to maintain equal height */
+.card {
+  border: 1px solid #ddd;  /* Light border */
+  border-radius: 8px;  /* Rounded corners */
+  overflow: hidden;  /* Ensure child elements don't overflow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Slight shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on cards */
+.card:hover {
+  transform: translateY(-5px);  /* Slightly raise the card on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);  /* Enhanced shadow on hover */
+}
+
+/* Add space between the cards */
+.card .project-ditels {
+  padding: 20px;  /* Padding inside the card */
+  background-color: #fff;  /* White background for content */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Add space between items and text */
+.project-card .project-ditels h3{
+  margin-bottom: 10px;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+.projectCard-btn {
+  background-color: #7e2cde;
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.projectCard-btn:hover {
+  background-color: #6b22c6;
+  transform: translateY(-2px);
+}
+
+
+.project-card .project-ditels p {
+  font-size: 16px;
+  /* display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3; */
+}
+.project-card .project-ditels h4{
+  font-size: 18px;
+  margin-bottom: 4px;
+  margin-top: 11px;
+
+}
+.project-card .project-ditels h5{
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+
+
+
+/* Adjust card columns and layout */
+@media (max-width: 1200px) {
+  .col-md-4 {
+    flex: 0 0 33.3333%; /* Ensure three items per row on medium screens */
+    max-width: 33.3333%;
+  }
+}
+
+@media (max-width: 992px) {
+  .col-md-4 {
+    flex: 0 0 50%; /* Ensure two items per row on smaller screens */
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-4 {
+    flex: 0 0 100%; /* Ensure one item per row on very small screens */
+    max-width: 100%;
+  }
+  .proficiencies-image{
+    width: 279px;
+  }
+}
+
+/* Add some space for the container */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Adjust the margin on cards */
+.mb-4 {
+  margin-bottom: 1.5rem;
 }
