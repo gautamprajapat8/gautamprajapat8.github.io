@@ -269,9 +269,16 @@ section .title::after {
 .about
 {
   padding-top: 70px;
+    box-shadow: rgba(56, 54, 54, 0.2) 0px 0px 8px 0px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    padding-top: 70px;
 }
 .about .title::after {
-  content: "who i am";
+  content: "Who I Am";
+}
+
+.qualification .title::after {
+  content: "My Education";
 }
 
 .about .about-content .left {
@@ -335,7 +342,7 @@ section .title::after {
 }
 
 .skills .title::after {
-  content: "what i know";
+  content: "What i know";
 }
 
 .skills-images
@@ -389,7 +396,7 @@ section .title::after {
   padding-top: 70px;
 }
 .proficiencies .title::after {
-  content: "what i know";
+  content: "What I Do Best";
 }
 
 .proficiencies-content .column
@@ -445,7 +452,7 @@ section .title::after {
   padding-top: 70px;
 }
 .project .title::after {
-  content: "see my work";
+  content: "See my work";
 }
 .project .carousel .card 
 {
@@ -541,7 +548,7 @@ section .title::after {
   padding-top: 70px;
 }
 .statistics .title::after {
-  content: " what i done";
+  content: " What i done";
 }
 .git
 {
@@ -658,7 +665,7 @@ section .title::after {
   box-shadow: rgba(56, 54, 54, 0.2) 0px 0px 8px 0px;
 }
 .contact .title::after {
-  content: "get in touch";
+  content: "Get in touch";
 }
 
 .contact .contact-content .column {
@@ -1600,12 +1607,12 @@ footer {
   }
   .skills .title::after {
     margin: -2px;
-    content: "what i know";
+    content: "What i know";
   }
 
   .proficiencies .title::after {
     margin: -2px;
-    content: "what i know";
+    content: "What i know";
   }
   .project .title::after {
     margin:-4px;
@@ -1613,7 +1620,7 @@ footer {
   }
   .contact .title::after {
     margin:-4px;
-    content: "get in touch";
+    content: "Get in touch";
   }
   #statistics
   {
@@ -1798,4 +1805,30 @@ footer {
 /* Adjust the margin on cards */
 .mb-4 {
   margin-bottom: 1.5rem;
+}
+
+
+.qualification-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.qualification-box {
+  padding: 15px 20px;
+  border-left: 4px solid #7e2cde;
+  background: #f9f9f9;
+  border-radius: 6px;
+}
+
+.qualification-box h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.qualification-box p {
+  margin: 0;
+  font-size: 15px;
+  color: #555;
 }
