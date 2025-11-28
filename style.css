@@ -1482,8 +1482,8 @@ footer {
 
   .skills .skills-content
   {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
   }
   .skills .skills-content .skills-images .text {
     font-size: 16px;
